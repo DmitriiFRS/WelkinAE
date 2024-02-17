@@ -5,7 +5,7 @@ module.exports = {
       remotePatterns: [
          {
             protocol: "https",
-            hostname: "welkingulf.ae",
+            hostname: "welkingroup.ru",
          },
       ],
    },
