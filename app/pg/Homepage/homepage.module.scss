@@ -49,6 +49,10 @@
       max-width: 246px;
       padding: 20px 40px;
       border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
    }
    &__imagesBody {
       flex: 0 1 50%;

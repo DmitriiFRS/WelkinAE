@@ -28,7 +28,7 @@ function Filter({ getFiltration, buttons }: { getFiltration: (e: any) => void; b
       <section className={styles.filter}>
          <div className={styles.filter__sortBtn}>
             <Image src={filterIcon} alt="filter" />
-            <span className={styles.filter__sortText}>Фильтр</span>
+            <span className={styles.filter__sortText}>Filter</span>
          </div>
          <div className={styles.filter__sortBody}>
             {buttons.map((el, index) => {
@@ -37,10 +37,10 @@ function Filter({ getFiltration, buttons }: { getFiltration: (e: any) => void; b
          </div>
          <div className={styles.filter__acceptBody}>
             <button ref={btnRef} className={`${styles.filter__accept} btnBlack`} onClick={(e) => getFiltration(e)}>
-               <span>Применить</span>
+               <span>Accept</span>
             </button>
             <button onClick={reloadPage} className={`${styles.filter__accept} btnBlack`}>
-               <span>Сбросить</span>
+               <span>Reset</span>
             </button>
          </div>
       </section>

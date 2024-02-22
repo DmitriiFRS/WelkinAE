@@ -121,6 +121,8 @@
          display: flex;
          align-items: center;
          justify-content: center;
+         text-align: center;
+         white-space: nowrap;
       }
       & > *:not(:last-child) {
          margin: 0 0 20px 0;
@@ -321,6 +323,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      white-space: nowrap;
    }
 }
 

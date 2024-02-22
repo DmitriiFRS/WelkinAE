@@ -64,41 +64,41 @@ async function Footer() {
                </div>
             </Link>
             <Link href={"/Privacy-policy"}>
-               <div className={styles.footer__subtitle}>политика конфиденциальности</div>
+               <div className={styles.footer__subtitle}>privacy policy</div>
             </Link>
          </div>
          <div className={styles.footer__cols}>
             <div className={styles.footer__cols__items}>
-               <h3 className={styles.footer__cols__title}>Навигация</h3>
+               <h3 className={styles.footer__cols__title}>Navigation</h3>
                <ul className={styles.footer__cols__list}>
                   <li className={styles.footer__cols__item}>
                      <Link className={styles.footer__cols__itemBody} href={"/catalog"}>
-                        каталог
+                        Catalog
                      </Link>
                   </li>
                   <li className={styles.footer__cols__item}>
                      <Link className={styles.footer__cols__itemBody} href={"/about"}>
-                        о компании
+                        About us
                      </Link>
                   </li>
                   <li className={styles.footer__cols__item}>
                      <Link className={styles.footer__cols__itemBody} href={"/faq"}>
-                        вопрос-ответ
+                        FAQ
                      </Link>
                   </li>
                </ul>
             </div>
             <div className={styles.footer__cols__items}>
-               <h3 className={styles.footer__cols__title}>Контакты</h3>
+               <h3 className={styles.footer__cols__title}>Contacts</h3>
                <ul className={styles.footer__cols__list}>
                   <li className={styles.footer__cols__item}>{data.data.phones.nodes[0].phoneNumber.number}</li>
                   <li className={`${styles.footer__cols__item} ${styles.footer__cols__itemMail}`}>
-                     welkinru@gmail.com
+                     sales@welkingroup.ru
                   </li>
                </ul>
             </div>
             <div className={styles.footer__cols__items}>
-               <h3 className={styles.footer__cols__title}>Соц сети</h3>
+               <h3 className={styles.footer__cols__title}>Social</h3>
                <ul className={styles.footer__cols__list}>
                   {data.data.footer.nodes.map((el) => {
                      return (

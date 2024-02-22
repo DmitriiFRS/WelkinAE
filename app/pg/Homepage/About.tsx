@@ -21,7 +21,7 @@ function About({ data }: Props) {
                <h2 className={styles.about__title}>{data.title}</h2>
                <p className={styles.about__subtitle}>{data.subtitle}</p>
                <Link href={"/about"} className={styles.about__btn}>
-                  Подробнее
+                  Read More
                </Link>
             </div>
          </div>

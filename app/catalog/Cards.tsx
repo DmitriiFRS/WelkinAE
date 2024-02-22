@@ -24,21 +24,16 @@ type Props = Array<ItemType>;
 const buttons: ButtonsType = [
    {
       id: 1,
-      title: "Система",
-      checkbox: ["Чиллер-фанкойл", "VRF-Система", "Приточные установки", "Крышные кондиционеры"],
+      title: "Type",
+      checkbox: ["Chiller-fancoil", "VRF", "AHU", "Rooftop"],
       chillerCheckbox: [
-         "Чиллеры",
-         "Кассетные фанкойлы",
-         "Канальные фанкойлы",
-         "Настенные фанкойлы",
-         "Потолочные и напольные фанкойлы",
+         "Chillers",
+         "Cassette fancoil units",
+         "Ducted fancoil units",
+         "Wall-mounted fancoil units",
+         "Ceiling and floor mounted fancoil units",
       ],
-      vrfCheckbox: [
-         "Наружные блоки",
-         "Кассетные внутренние блоки",
-         "Канальные внутренние блоки",
-         "Настенные внутренние блоки",
-      ],
+      vrfCheckbox: ["Outdoor units", "Cassette indoor units", "Ducted indoor units", "Wall-mounted indoor units"],
    },
 ];
 

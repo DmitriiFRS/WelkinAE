@@ -6,14 +6,14 @@ import { usePathname } from "next/navigation";
 function Breadcrumbs() {
    const paths = usePathname();
    const pathNames = paths.split("/").filter((path) => path);
-   const titleRouter = ["Главная"];
+   const titleRouter = ["Homepage"];
    return (
       <div className={styles.breadcrumbs}>
          {paths.split("/").map((el, index) => {
             let href = `/${pathNames.slice(0, index).join("/")}`;
-            if (el === "catalog") titleRouter.push("Каталог");
-            else if (el === "faq") titleRouter.push("Вопрос-ответ");
-            else if (el === "about") titleRouter.push("О компании");
+            if (el === "catalog") titleRouter.push("Catalog");
+            else if (el === "faq") titleRouter.push("FAQ");
+            else if (el === "about") titleRouter.push("About us");
             else if (el) titleRouter.push(el);
             return (
                <div className={styles.breadcrumbs__link} key={index}>

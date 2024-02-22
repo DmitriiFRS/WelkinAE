@@ -12,7 +12,7 @@ type DataType = {
 function Questions({ data }: { data: Array<DataType> }) {
    return (
       <section className={styles.faq__questions}>
-         <h2 className={styles.faq__title}>Часто задаваемые вопросы</h2>
+         <h2 className={styles.faq__title}>FAQ</h2>
          <ul className={styles.faq__cols}>
             {data.map((el) => {
                return <Col key={el.id} el={el.qa.question} id={el.qa.id} />;

@@ -57,33 +57,17 @@ function Inputs() {
    }
    async function handleSubmit(e: FormEvent) {
       e.preventDefault();
-      if (!name || !tel || !question) return;
-      try {
-         const res = await fetch("https://welkingroup.ru/wpgraphql", {
-            method: "POST",
-            body: JSON.stringify({
-               query: `
-               mutation {
-                  createReq(input: {title: "gfgf"}) {
-                    clientMutationId
-                    req {
-                      request {
-                        name
-                        phone
-                        question
-                      }
-                    }
-                  }
-                }
-               `,
-            }),
-            headers: {
-               "content-type": "application/json",
-            },
-         });
-      } catch (err: any) {
-         console.error("error", err);
-      }
+      const response = await fetch("/pages/api", {
+         method: "POST",
+         headers: {
+            "content-type": "application/json",
+         },
+         body: JSON.stringify({
+            name,
+            tel,
+            question,
+         }),
+      });
       setName("");
       setTel("");
       setQuestion("");
@@ -95,7 +79,7 @@ function Inputs() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             className={`${styles.contactUs__input} ${nameIsDirty ? styles.contactUs__input__dirty : ""}`}
-            placeholder="ваше имя"
+            placeholder="Your name"
             type="text"
          />
          <input
@@ -104,7 +88,7 @@ function Inputs() {
             name="phone"
             onChange={(e) => changeTel(e)}
             className={`${styles.contactUs__input} ${telIsDirty ? styles.contactUs__input__dirty : ""}`}
-            placeholder="ваш телефон"
+            placeholder="Your phone number"
             type="text"
          />
          <textarea
@@ -112,7 +96,7 @@ function Inputs() {
             value={question}
             name="textarea"
             onChange={(e) => setQuestion(e.target.value)}
-            placeholder="ваш вопрос"
+            placeholder="Your question"
             className={`${styles.contactUs__inputArea} ${textIsDirty ? styles.contactUs__inputArea__dirty : ""}`}
          ></textarea>
          <div
@@ -120,7 +104,7 @@ function Inputs() {
                nameIsDirty || telIsDirty || textIsDirty ? styles.contactUs__dirtyField__active : ""
             }`}
          >
-            Заполните все поля
+            Please fill in all fields
          </div>
          <PushData throwData={throwData} />
          <Popup isPopupOpen={isPopupOpen} setPopupOpen={setPopupOpen} />

@@ -10,7 +10,7 @@ async function Preview({ data }: any) {
                <h1 className={styles.preview__title}>{data.title}</h1>
                <p className={styles.preview__subtitle}>{data.subtitle}</p>
                <Link href={"/catalog"} className={`${styles.preview__btn} btnBlack`}>
-                  <span>перейти в каталог</span>
+                  <span>go to catalog</span>
                </Link>
             </div>
             <div className={styles.preview__imagesBody}>

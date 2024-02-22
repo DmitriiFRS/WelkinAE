@@ -10,7 +10,7 @@ import EquipInnerTitle from "./EquipInnerTitle";
 const equip = [
    {
       id: 0,
-      title: "Приточно-вытяжная установка",
+      title: "AHU",
       img: pwr,
       className: styles.equip__pwr,
       imgClassName: styles.equip__pwrImg,
@@ -18,7 +18,7 @@ const equip = [
    },
    {
       id: 1,
-      title: "Крышные кондиционеры",
+      title: "Rooftop",
       img: rooftop,
       className: styles.equip__rooftop,
       imgClassName: styles.equip__rooftopImg,
@@ -26,7 +26,7 @@ const equip = [
    },
    {
       id: 2,
-      title: "VRF Системы",
+      title: "VRF",
       img: vrf,
       className: styles.equip__vrf,
       imgClassName: styles.equip__vrfImg,
@@ -34,7 +34,7 @@ const equip = [
    },
    {
       id: 3,
-      title: "Система чиллер-фанкойл",
+      title: "Chiller-fancoil",
       img: chiller,
       className: styles.equip__chiller,
       imgClassName: styles.equip__chillerImg,
@@ -47,9 +47,9 @@ function Equip() {
       <div className={styles.equip}>
          <div className="container">
             <div className={styles.equip__titleBody}>
-               <h2 className={styles.equip__title}>Наше оборудование</h2>
+               <h2 className={styles.equip__title}>Our equipment</h2>
                <Link href="/catalog">
-                  <button className={styles.equip__catalog}>весь каталог</button>
+                  <button className={styles.equip__catalog}>Our catalog</button>
                </Link>
             </div>
             <div className={styles.equip__itemsBody}>
@@ -60,7 +60,7 @@ function Equip() {
                   }}
                   className={`${styles.equip__item1} ${styles.equip__items}`}
                >
-                  <EquipInnerTitle title={"Приточно-вытяжная установка"} style={styles.equip__innerTitleBody} />
+                  <EquipInnerTitle title={"AHU"} style={styles.equip__innerTitleBody} />
                   <div className={`${styles.equip__item1__imgBody} ${styles.equip__items__imgBody}`}>
                      <Image src={pwr} alt="ПВУ" fill />
                   </div>
@@ -72,7 +72,7 @@ function Equip() {
                   }}
                   className={`${styles.equip__item2} ${styles.equip__items}`}
                >
-                  <EquipInnerTitle title={"Крышные кондиционеры"} style={styles.equip__innerTitleBody2} />
+                  <EquipInnerTitle title={"Rooftop"} style={styles.equip__innerTitleBody2} />
                   <div className={`${styles.equip__item2__imgBody} ${styles.equip__items__imgBody}`}>
                      <Image src={rooftop} alt="rooftop" fill />
                   </div>
@@ -85,7 +85,7 @@ function Equip() {
                      }}
                      className={`${styles.equip__item3__subitem1} ${styles.equip__items}`}
                   >
-                     <EquipInnerTitle title={"WRV Системы"} style={styles.equip__innerTitleBody3} />
+                     <EquipInnerTitle title={"VRF"} style={styles.equip__innerTitleBody3} />
                      <div className={`${styles.equip__item3__subitem1__imgBody} ${styles.equip__items__imgBody}`}>
                         <Image src={vrf} alt="vrf" fill />
                      </div>
@@ -97,7 +97,7 @@ function Equip() {
                      }}
                      className={`${styles.equip__item3__subitem2} ${styles.equip__items}`}
                   >
-                     <EquipInnerTitle title={"Система чиллер-фанкойл"} style={styles.equip__innerTitleBody4} />
+                     <EquipInnerTitle title={"Chiller-fancoil"} style={styles.equip__innerTitleBody4} />
                      <div className={`${styles.equip__item3__subitem2__imgBody} ${styles.equip__items__imgBody}`}>
                         <Image src={chiller} alt="vrf" fill />
                      </div>

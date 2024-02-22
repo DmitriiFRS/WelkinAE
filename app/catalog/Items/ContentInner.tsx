@@ -45,7 +45,7 @@ function ContentInner({ items, isTransition }: { items: Props; isTransition: boo
                         href={`/catalog/${el.productCard.href.replace(/\s|\//g, "_")}`}
                         className={`${styles.cards__item__btn} btnYellow`}
                      >
-                        <span>Узнать цену</span>
+                        <span>Get the price</span>
                      </Link>
                   </li>
                );

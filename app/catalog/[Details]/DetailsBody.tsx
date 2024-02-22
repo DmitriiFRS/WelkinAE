@@ -37,20 +37,20 @@ async function DetailsBody({ el, decodedPhoneNumber }: Props) {
                   <div className={styles.details__name}>{el.productCard.title}</div>
                   <div className={styles.details__mainParams}>
                      <div className={styles.details__mainParam}>
-                        Теплопроизводительность, Квт:<span>{el.productCard.heatOutput}</span>
+                        Heat output, KW:<span>{el.productCard.heatOutput}</span>
                      </div>
                      <div className={styles.details__mainParam}>
-                        Холодопроизводительность, Квт:
+                        Cooling output, KW:
                         <span>{el.productCard.coolingOutput}</span>
                      </div>
                   </div>
                   <a href={"tel://" + decodedPhoneNumber} className={`${styles.details__item__btn} btnYellow`}>
-                     <span>Узнать цену</span>
+                     <span>Get the price</span>
                   </a>
                </div>
             </div>
             <div className={styles.details__titleBody}>
-               <h3 className={styles.details__title}>Описание</h3>
+               <h3 className={styles.details__title}>Description</h3>
                <p className={styles.details__subtitle}>{el.productCard.description && el.productCard.description}</p>
                <p className={styles.details__subtitle}>{el.productCard.description2 && el.productCard.description2}</p>
                <p className={styles.details__subtitle}>{el.productCard.description3 && el.productCard.description3}</p>

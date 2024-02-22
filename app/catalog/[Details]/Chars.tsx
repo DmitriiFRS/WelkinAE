@@ -9,18 +9,18 @@ function Chars({ el }: Props) {
    return (
       el && (
          <div className={styles.chars}>
-            <h3 className={styles.chars__title}>Характеристики</h3>
+            <h3 className={styles.chars__title}>Specifications</h3>
             <ul className={styles.chars__body}>
                <li className={styles.chars__item}>
-                  <div className={styles.chars__item__title}>Серия оборудования</div>
+                  <div className={styles.chars__item__title}>Equipment series</div>
                   <div className={styles.chars__item__value}>{el.productCard.title}</div>
                </li>
                <li className={styles.chars__item}>
-                  <div className={styles.chars__item__title}>Тип</div>
+                  <div className={styles.chars__item__title}>Type</div>
                   <div className={styles.chars__item__value}>{el.productCard.type}</div>
                </li>
                <li className={styles.chars__item}>
-                  <div className={styles.chars__item__title}>Размер</div>
+                  <div className={styles.chars__item__title}>Size</div>
                   <div className={styles.chars__item__value}>{el.productCard.size}</div>
                </li>
                <li className={styles.chars__item}>

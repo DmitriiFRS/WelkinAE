@@ -6,10 +6,10 @@ function ContactUs() {
       <div className={styles.contactUs}>
          <div className={`container ${styles.contactUs__container}`}>
             <div className={styles.contactUs__titleBody}>
-               <h2 className={styles.contactUs__title}>Свяжитесь с нами</h2>
+               <h2 className={styles.contactUs__title}>Contact us</h2>
                <p className={styles.contactUs__subtitle}>
-                  Наши опытные специалисты готовы взять на себя решение любой задачи с оборудованием Welkin. Мы
-                  гарантируем, что вы получите оптимальное решение, отвечающее вашим потребностям и бюджету.
+                  Our experienced specialists are ready to take on any task with Welkin equipment. We guarantee that you
+                  will receive the optimal solution that meets your needs and budget.
                </p>
             </div>
             <Inputs />

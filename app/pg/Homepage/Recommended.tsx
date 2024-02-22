@@ -30,7 +30,7 @@ async function Recommended({ data }: { data: Array<Products> }) {
    return (
       <div className={styles.recommended}>
          <div className="container">
-            <h2 className={styles.recommended__title}>Рекомендуем</h2>
+            <h2 className={styles.recommended__title}>Popular</h2>
             <ul className={styles.recommended__list}>
                {data.map((el: any) => {
                   return (
@@ -53,7 +53,7 @@ async function Recommended({ data }: { data: Array<Products> }) {
                            href={`/catalog/${el.productRecommended.href.replace(/\s|\//g, "_")}`}
                            className={styles.recommended__btn}
                         >
-                           <span>Узнать цену</span>
+                           <span>Get the price</span>
                         </Link>
                      </li>
                   );

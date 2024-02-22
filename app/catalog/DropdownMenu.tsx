@@ -12,25 +12,20 @@ import SubDropdown from "./SubDropdown";
 const subDropdown = [
    {
       id: 2000,
-      title: "Тип фанкойла",
+      title: "Fancoil type",
       checkbox: [
-         "Чиллеры",
-         "Кассетные фанкойлы",
-         "Канальные фанкойлы",
-         "Настенные фанкойлы",
-         "Потолочные и напольные фанкойлы",
+         "Chillers",
+         "Cassette fancoil units",
+         "Ducted fancoil units",
+         "Wall-mounted fancoil units",
+         "Ceiling and floor mounted fancoil units",
       ],
       classname: styles.filter__subItemBody1,
    },
    {
       id: 3000,
-      title: "Тип VRF",
-      checkbox: [
-         "Наружные блоки",
-         "Кассетные внутренние блоки",
-         "Канальные внутренние блоки",
-         "Настенные внутренние блоки",
-      ],
+      title: "VRF type",
+      checkbox: ["Outdoor units", "Cassette indoor units", "Ducted indoor units", "Wall-mounted indoor units"],
       classname: styles.filter__subItemBody2,
    },
 ];
