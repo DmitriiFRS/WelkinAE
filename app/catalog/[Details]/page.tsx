@@ -14,7 +14,7 @@ type MetadataType = {
    };
 };
 
-/*export async function generateMetadata({ params }: { params: { Details: string } }) {
+export async function generateMetadata({ params }: { params: { Details: string } }) {
    const item = await fetchGraphqlData(`
     query {
       products(first: 99) {
@@ -36,7 +36,7 @@ type MetadataType = {
       title: searchItem.productCard.title,
       description: searchItem.productCard.metaDescription,
    };
-}*/
+}
 
 async function Details({ params }: { params: { Details: string } }) {
    const data = await fetchGraphqlData(`
