@@ -8,7 +8,7 @@ import Loader from "./Loader";
 function CatalogContainer({ jwtToken }: { jwtToken: string | undefined }) {
    const [data, setData] = useState<any>(null);
 
-   /* useEffect(() => {
+   useEffect(() => {
       const headers = {
          "Content-type": "application/json",
          Authorization: `Bearer ${jwtToken}`,
@@ -40,10 +40,8 @@ function CatalogContainer({ jwtToken }: { jwtToken: string | undefined }) {
       })
          .then((res) => res.json())
          .then((res) => setData(res));
-   }, []);*/
+   }, []);
 
-   return (
-      <div>error</div>
-   ); /*<div className={styles.catalog__body}>{!data ? <Loader /> : <Cards items={data.data.products.nodes} />}</div>;*/
+   return <div className={styles.catalog__body}>{!data ? <Loader /> : <Cards items={data.data.products.nodes} />}</div>;
 }
 export default CatalogContainer;

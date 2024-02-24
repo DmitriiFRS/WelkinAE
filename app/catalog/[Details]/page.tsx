@@ -39,7 +39,7 @@ type MetadataType = {
 }*/
 
 async function Details({ params }: { params: { Details: string } }) {
-   /*const data = await fetchGraphqlData(`
+   const data = await fetchGraphqlData(`
    query {
     products(first: 99) {
       nodes {
@@ -86,8 +86,8 @@ async function Details({ params }: { params: { Details: string } }) {
     }
   }
    `);
-   const decodedPhoneNumber = decodeURI(data.data.phones.nodes[0].phoneNumber.number);*/
-   return <div>error</div>; /*(
+   const decodedPhoneNumber = decodeURI(data.data.phones.nodes[0].phoneNumber.number);
+   return (
       <div className={styles.details}>
          <div className="container">
             <Breadcrumbs />
@@ -101,6 +101,6 @@ async function Details({ params }: { params: { Details: string } }) {
          </div>
          <ContactUs />
       </div>
-   );*/
+   );
 }
 export default Details;
