@@ -39,165 +39,162 @@ type TypeTextBlock = Array<TypeInnerBlock>;
 
 const textBlock: TypeTextBlock = [
    {
-      title: "1. Общие положения",
+      title: "1. General provisions",
       subtitles: [
          {
-            main: "1.1. Настоящая Политика в отношении обработки и защиты персональных данных (далее — Политика) разработана в соответствии со статьей 18.1 Федерального закона от 27.07.2006 года № 152-ФЗ «О персональных данных» и является внутренним документом ООО «УРБАН-ГРУПП» (далее — Общество), регулирующим его деятельность в области обработки и защиты персональных данных, оператором которых является Общество.",
+            main: "1.1. This Policy regarding the processing and protection of personal data (hereinafter - the Policy) is developed in accordance with Article 18.1 of the Federal Law dated 27.07.2006 No. 152-FZ On Personal Data and is an internal document of URBAN-GROUPP LLC (hereinafter - the Company) regulating its activities in the field of processing and protection of personal data, the operator of which is the Company.",
          },
          {
-            main: "1.2. Политика разработана в целях реализации требований законодательства Российской Федерации в области обработки и защиты персональных данных и направлена на обеспечение защиты прав и свобод человека и гражданина при обработке его персональных данных в Обществе, в том числе защиты прав на неприкосновенность частной жизни, личной и семейной тайн.",
+            main: "1.2. The Policy is developed in order to implement the requirements of the legislation of the Russian Federation in the field of processing and protection of personal data and is aimed at ensuring the protection of human and civil rights and freedoms when processing personal data in the Company, including the protection of the rights to privacy, personal and family secrets.",
          },
          {
-            main: "1.3. Действие настоящей Политики распространяется на любую информацию о пользователе, полученную Обществом, как до, так и после утверждения Политики.",
+            main: "1.3. This Policy applies to any user information received by the Company, both before and after the Policy is approved.",
          },
          {
-            main: "1.4. Действие настоящей Политики распространяется на всю информацию, которую Общество может получить о пользователе во время использования им сайта welkingroup.ru (далее — Сайт).",
+            main: "1.4. This Policy applies to all information that the Company may obtain about the user during his/her use of the welkin-team.ae website (hereinafter - the Site).",
          },
          {
-            main: "1.5. Посещение и использование Сайта означает безоговорочное согласие пользователя:",
+            main: "1.5. Visiting and using the Site constitutes the user's unconditional consent:",
             listItem: [
-               "на обработку его персональных данных, указанных статье 2 настоящей Политики;",
-               "с условиями обработки его персональных данных, содержащимися в настоящей Политике.",
+               "to the processing of his/her personal data specified in Article 2 of this Policy;",
+               "with the terms of processing his/her personal data contained in this Policy.",
             ],
          },
          {
-            main: "1.6. В случае несогласия с условиями обработки персональных данных в Обществе, пользователь должен прекратить использование Сайта.",
+            main: "1.6. In case of disagreement with the terms of personal data processing in the Company, the user must stop using the Site.",
          },
          {
-            main: "1.7. Настоящая Политика применяется только к сайту welkingroup.ru Общество не контролирует и не несет ответственности за сбор и обработку персональных данных третьими лицами, на сайты которых пользователь может перейти по ссылкам, доступным на сайте welkingroup.ru",
+            main: "1.7. This Policy applies only to the welkingroup.ru website The Company does not control and is not responsible for the collection and processing of personal data by third parties, whose websites the user can access via links available on the welkin-team.ae website.",
          },
          {
-            main: "1.8. Общество не осуществляет проверку достоверности персональных данных, предоставленных пользователем.",
+            main: "1.8. The Company does not verify the authenticity of personal data provided by the user.",
          },
       ],
    },
    {
-      title: "2. Состав получаемых и обрабатываемых персональных данных",
+      title: "2. Composition of personal data received and processed",
       subtitles: [
          {
-            main: "2.1. Данные о пользователе, получаемые и обрабатываемые в рамках настоящей Политики поступают в Общество следующими способами:",
+            main: "2.1. User data received and processed within the framework of this Policy shall be received by the Company in the following ways:",
          },
          {
-            main: "2.1.1. Предоставляются самим пользователем на Сайте путём:",
+            main: "2.1.1. Provided by the user himself on the Site by:",
             listItem: [
-               "заполнения регистрационной формы и включают в себя следующую информацию: фамилия, имя, адрес электронной почты (email);",
-               "заполнения данных пользователя в личном кабинете и включают в себя следующую информацию: фамилия, имя, отчество, номер телефона, адрес электронной почты (email), почтовом адресе;",
-               "заполнения формы оформления заказа и включают в себя следующую информацию: фамилия, имя, отчество, номер телефона, адрес электронной почты (email), почтовом адресе;",
-               "заполнения формы подписки на новостную рассылку и включают в себя информацию об адресе электронной почты;",
-               "заполнения формы обратной связи и включают в себя следующую информацию: имя, адрес электронной почты (email), номер телефона;",
-               "заполнения формы обратного звонка и включают в себя информацию о номере телефона;",
-               "заполнения формы запроса на расчет стоимости услуг Общества и включают в себя следующую информацию: имя, номер телефона, адрес электронной почты (email);",
-               "связи с Обществом посредством направления письменной корреспонденции на почтовые адреса Общества, по номерам телефонов, адресам электронной почты, указанным на Сайте и любыми другими способами и могут включать в себя следующую информацию: Ф.И.О., почтовый адрес, место проживания, контактный телефон, адрес электронной почты (e-mail) и иную информацию на усмотрение пользователя.",
+               "filling in the registration form and include the following information: surname, first name, e-mail address (email);",
+               "filling in the user's data in myAlpari and include the following information: surname, first name, patronymic, telephone number, electronic mail (email) address, postal address;",
+               "filling in the order form and include the following information: surname, first name, patronymic, phone number, e-mail address, postal address;",
+               "filling out the newsletter subscription form and include information about your e-mail address;",
+               "filling out the feedback form and include the following information: name, e-mail address (email), phone number;",
+               "filling out the callback form and include phone number information;",
+               "filling in the form of request for calculation of the Company's services cost and include the following information: name, phone number, e-mail address (email);",
+               "communication with the Company by sending written correspondence to the Company's mailing addresses, telephone numbers, e-mail addresses specified on the Website and by any other means and may include the following information: Full name, postal address, place of residence, contact phone number, electronic mail (e-mail) address and other information at the discretion of the user.",
             ],
          },
          {
-            main: "2.1.2. Автоматически передаются Обществу в процессе посещения и использования Сайта с помощью установленного на устройстве пользователя программного обеспечения, в том числе: IP-адрес, информация из cookie, информация о браузере пользователя (или иной программе, с помощью которой осуществляется доступ к сайту), время доступа, адрес запрашиваемой страницы.",
+            main: "2.1.2. Automatically transmitted to the Company in the process of visiting and using the Site using the software installed on the user's device, including: IP address, cookie information, information about the user's browser (or other program with which the Site is accessed), access time, address of the requested page.",
          },
       ],
    },
    {
-      title: "3. Цели сбора и обработки персональных данных",
+      title: "3. Purposes of personal data collection and processing",
       subtitles: [
          {
-            main: "3.1. Сбор и обработка персональных данных пользователя Обществом осуществляется в следующих целях:",
+            main: "3.1. The Company collects and processes user's personal data for the following purposes:",
          },
          {
-            main: "3.1.1. Заключение договоров на продажу товаров (оказание услуг) пользователю от имени Общества и (или) партнеров Общества.",
+            main: "3.1.1. Conclusion of contracts for sale of goods (provision of services) to the user on behalf of the Company and (or) the Company's partners.",
          },
          {
-            main: "3.1.2. Связь с пользователем в случае необходимости, в том числе направление уведомлений, запросов и информации, связанных с использованием Сайта, исполнением заказов на приобретение товаров и оказание услуг Обществом, а также обработка запросов и заявок от пользователя;",
+            main: "3.1.2. Communication with the user when necessary, including sending notices, requests and information related to the use of the Site, execution of orders for the purchase of goods and provision of services by the Company, as well as processing requests and applications from the user;",
          },
          {
-            main: "3.1.3. Предоставление пользователю эффективной клиентской и технической поддержки при возникновении проблем, связанных с использованием Сайта, оказанием услуг Обществом и (или) партнерами Общества;",
+            main: "3.1.3. Provision of effective customer and technical support to the user in case of problems related to the use of the Website, provision of services by the Company and (or) the Company's partners;",
          },
          {
-            main: "3.1.4. Повышение качества Сайта, удобства его использования;",
+            main: "3.1.4. Improving the quality of the Website and its usability;",
          },
          {
-            main: "3.1.5. Предоставление пользователю, с его согласия, персональных услуг, специальных предложений, информации о ценах, новостной рассылки и иных сведений от имени Общества и (или) от имени партнеров Общества;",
+            main: "3.1.5. Provision of personal services, special offers, price information, newsletters and other information on behalf of the Company and (or) on behalf of the Company's partners to the user with his/her consent;",
          },
          {
-            main: "3.1.6. Осуществления рекламной деятельности с согласия пользователя;",
+            main: "3.1.6. Carrying out advertising activities with the consent of the user;",
          },
          {
-            main: "3.1.7. Проведение статистических и иных исследований на основе обезличенных данных.",
+            main: "3.1.7. Conducting statistical and other studies based on anonymized data.",
          },
       ],
    },
    {
-      title: "4. Предоставление доступа к персональным данным",
+      title: "4. Providing access to personal data",
       subtitles: [
          {
-            main: "4.1. Общество обеспечивает сохранность персональных данных пользователей.",
+            main: "4.1. The Company shall ensure the safety of users' personal data.",
          },
          {
-            main: "4.2. Обрабатываемые персональные данные уничтожаются либо обезличиваются Обществом по достижении целей обработки или в случае утраты необходимости в достижении этих целей, а так же при отзыве Пользователем согласия на обработку персональных данных.",
+            main: "4.2. Processed personal data shall be destroyed or anonymized by the Company upon achievement of the processing purposes or in case of loss of necessity to achieve these purposes, as well as in case of withdrawal of the User's consent to the processing of personal data.",
          },
          {
-            main: "4.3. Пользователь вправе в любой момент отозвать согласие на обработку Обществом персональных данных путём направления письменного уведомления на адрес: Москва, Строительный пр-д, 7а, корп. 30, с пометкой «отзыв согласия на обработку персональных данных». Отзыв пользователем согласия на обработку персональных данных влечёт за собой уничтожение записей, содержащих персональные данные, в системах обработки персональных данных Общества.",
+            main: "4.3. The User has the right to withdraw consent to the Company's processing of personal data at any time by sending a written notice to the address: Moscow, Stroitelny pr-d, 7a, Bldg. 30, marked withdrawal of consent to the processing of personal data. Withdrawal of consent to the processing of personal data by the user shall result in the destruction of records containing personal data in the Company's personal data processing systems.",
          },
          {
-            main: "4.4. В отношении персональных данных пользователя сохраняется их конфиденциальность, кроме случаев, установленных в п. 4.5. настоящей Политики.",
+            main: "4.4. User's personal data shall be kept confidential, except for the cases specified in clause 4.5. of this Policy.",
          },
          {
-            main: "4.5. Общество вправе передать персональные данные пользователя третьим лицам в следующих случаях:",
+            main: "4.5. The Company has the right to transfer the user's personal data to third parties in the following cases:",
          },
          {
-            main: "4.5.1. Пользователь явным образом выразил свое согласие на передачу своих персональных данных;",
+            main: "4.5.1. The User has expressly consented to the transfer of his/her personal data;",
          },
          {
-            main: "4.5.2. Передача персональных данных необходима для оказания определенной услуги пользователю Обществом или партнерами Общества (транспортными компаниями, платежными сервисами и.т.д.). При этом обеспечивается конфиденциальность персональной информации, а пользователь уведомляется о такой передаче;",
+            main: "4.5.2. The transfer of personal data is necessary for the provision of a certain service to the user by the Company or the Company's partners (transportation companies, payment services, etc.). The confidentiality of personal information is ensured, and the user is notified of such transfer;",
          },
          {
-            main: "4.5.3. Передача предусмотрена российским или иным применимым законодательством в рамках установленной процедуры (по решению суда, запросу правоохранительных органов и т.д.);",
+            main: "4.5.3. The transfer is provided for by Russian or other applicable law under an established procedure (by court order, law enforcement request, etc.);",
          },
          {
-            main: "4.5.4. Такая передача происходит в рамках продажи или иной передачи бизнеса (полностью или в части), при этом к приобретателю переходят все обязательства по соблюдению условий настоящей Политики применительно к полученной им персональной информации;",
+            main: "4.5.4. Such a transfer occurs as part of a sale or other transfer of a business (in whole or in part), and the transferee assumes all obligations to comply with the terms of this Policy with respect to the personal information it receives;",
          },
          {
-            main: "4.5.5. В целях обеспечения возможности защиты прав и законных интересов Общества.",
+            main: "4.5.5. In order to provide an opportunity to protect the rights and legitimate interests of the Company.",
          },
          {
-            main: "4.6. При утрате или разглашении персональных данных Общество информирует пользователя об утрате или разглашении персональных данных.",
+            main: "4.6. In case of loss or disclosure of personal data, the Company shall inform the user of the loss or disclosure of personal data.",
          },
       ],
    },
    {
-      title: "5. Защита персональных данных пользователей",
+      title: "5. Protection of users' personal data",
       subtitles: [
          {
-            main: "5.1. Общество гарантирует, что уровень защищенности персональных данных пользователей соответствует требованиям, установленным в Постановлении Правительства Российской Федерации от 1 ноября 2012 г. № 1119 «Об утверждении требований к защите персональных данных при их обработке в информационных системах персональных данных».",
+            main: "5.1. The Company guarantees that the level of protection of users' personal data complies with the requirements set forth in Resolution of the Government of the Russian Federation No. 1119 dated November 1, 2012 On Approval of Requirements for Protection of Personal Data when Processed in Personal Data Information Systems.",
          },
          {
-            main: "5.2. Общество принимает необходимые организационные и технические меры для защиты персональных данных пользователя от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий третьих лиц в соответствии с требованиями Приказа ФСТЭК России от 18.02.2013 № 21 «Об утверждении Состава и содержания организационных и технических мер по обеспечению безопасности персональных данных при их обработке в информационных системах персональных данных».",
+            main: "5.2. The Company shall take the necessary organizational and technical measures to protect the user's personal data from illegal or accidental access, destruction, modification, blocking, copying, distribution, as well as from other illegal actions of third parties in accordance with the requirements of the Order of the Federal Service for Technical and Export Control of Russia No. 21 dated 18.02.2013 On Approval of the Composition and Content of Organizational and Technical Measures to Ensure the Security of Personal Data when Processing in Personal Data Information Systems.",
          },
          {
-            main: "5.3. Сайт welkingroup.ru имеет сертификат безопасности SSL, с помощью которого информация передается между пользователем и Оператором в закодированном виде, с целью предотвращения ее перехвата и искажения во время пересылки.",
+            main: "5.3. The welkin-team.ae website has an SSL security certificate, by means of which information is transmitted between the user and the Operator in encrypted form, in order to prevent its interception and distortion during transmission.",
          },
       ],
    },
    {
-      title: "6. Ответственность",
+      title: "6. Responsibility",
       subtitles: [
          {
-            main: "6.1. В случае неисполнения своих обязательств, Общество несёт ответственность за убытки, понесённые пользователем в связи с неправомерным использованием персональных данных, в соответствии с законодательством Российской Федерации, за исключением случаев, предусмотренных 6.2. настоящей Политики.",
+            main: "6.1. In case of non-fulfillment of its obligations, the Company shall be liable for losses incurred by the user due to unauthorized use of personal data in accordance with the legislation of the Russian Federation, except as provided for in 6.2. of this Policy.",
          },
          {
-            main: "6.2. В случае утраты или разглашения персональных данных пользователя Общество не несёт ответственность, если данная информация стала публичным достоянием до её утраты или разглашения, либо была разглашена самим пользователем или с согласия пользователя.",
+            main: "6.2. In case of loss or disclosure of the user's personal data, the Company shall not be liable if this information became public before its loss or disclosure, or was disclosed by the user or with the user's consent.",
          },
       ],
    },
    {
-      title: "7. Заключительные положения",
+      title: "7. Final provisions",
       subtitles: [
          {
-            main: "7.1. Общество вправе вносить изменения и дополнения в настоящую Политику. Новая редакция Политики действует с момента ее размещения на сайте welkingroup.ru, если иное не предусмотрено в новой редакции Политики.",
+            main: "7.1. The Company shall have the right to make amendments and additions to this Policy. The new version of the Policy shall be effective from the moment of its posting on the welkin-team.ae website, unless otherwise provided for in the new version of the Policy.",
          },
          {
-            main: "7.2. К отношениям в области обработки и защиты персональных данных, не урегулированным в настоящей Политике, применяется действующее законодательство Российской Федерации.",
-         },
-         {
-            main: "7.3. Все предложения или вопросы, связанные с обработкой и защитой персональных данных Обществом следует направлять по адресу электронной почты sales@welkingroup.ru",
+            main: "7.2. The current legislation of the Russian Federation shall apply to the relations in the field of processing and protection of personal data not regulated in this Policy.",
          },
       ],
    },

@@ -3,30 +3,30 @@ import styles from "./about.module.scss";
 const cols = [
    {
       id: 0,
-      title: "Быстрая доставка",
-      subtitle: "До вашего дома",
+      title: "Fast delivery",
+      subtitle: "To your home",
    },
    {
       id: 1,
-      title: "Поддержка 24/7",
-      subtitle: "Мы всегда на связи",
+      title: "24/7 support",
+      subtitle: "We're always in touch",
    },
    {
       id: 2,
-      title: "Официальная гарантия",
-      subtitle: "На всю продукцию",
+      title: "Official warranty",
+      subtitle: "On all products",
    },
    {
       id: 3,
-      title: "Оплата",
-      subtitle: "Любой способ оплаты",
+      title: "Payment",
+      subtitle: "Any payment method",
    },
 ];
 
 function Cols() {
    return (
       <section className={styles.about__cols}>
-         <h2 className={styles.about__cols__title}>То, что выделяет нас</h2>
+         <h2 className={styles.about__cols__title}>What makes us stand out</h2>
          <ul className={styles.about__cols__colsBody}>
             {cols.map((el) => {
                return (
