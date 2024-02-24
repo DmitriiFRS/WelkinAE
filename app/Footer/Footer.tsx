@@ -4,13 +4,6 @@ import logo from "../../public/svg/logo.svg";
 import Link from "next/link";
 import { fetchGraphqlData } from "../Utilities/FetchData";
 
-type SocialInner = {
-   id: number;
-   attributes: {
-      name: string;
-      href: string;
-   };
-};
 type PhoneNumber = {
    phoneNumber: {
       number: string;
@@ -35,7 +28,7 @@ type FooterData = {
 };
 
 async function Footer() {
-   /*const data: FooterData = await fetchGraphqlData(`
+   const data: FooterData = await fetchGraphqlData(`
    query {
       phones {
          nodes {
@@ -54,8 +47,8 @@ async function Footer() {
          }
        }
        }
-   `);*/
-   return <div>error</div>; /*(
+   `);
+   return (
       <div className={`container ${styles.footer}`}>
          <div className={styles.footer__logoBody}>
             <Link href={"/"}>
@@ -113,7 +106,7 @@ async function Footer() {
             </div>
          </div>
       </div>
-   );*/
+   );
 }
 export default Footer;
 
