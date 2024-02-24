@@ -14,7 +14,7 @@ type MetadataType = {
    };
 };
 
-export async function generateMetadata({ params }: { params: { Details: string } }) {
+/*export async function generateMetadata({ params }: { params: { Details: string } }) {
    const item = await fetchGraphqlData(`
     query {
       products(first: 99) {
@@ -36,10 +36,10 @@ export async function generateMetadata({ params }: { params: { Details: string }
       title: searchItem.productCard.title,
       description: searchItem.productCard.metaDescription,
    };
-}
+}*/
 
 async function Details({ params }: { params: { Details: string } }) {
-   const data = await fetchGraphqlData(`
+   /*const data = await fetchGraphqlData(`
    query {
     products(first: 99) {
       nodes {
@@ -86,8 +86,8 @@ async function Details({ params }: { params: { Details: string } }) {
     }
   }
    `);
-   const decodedPhoneNumber = decodeURI(data.data.phones.nodes[0].phoneNumber.number);
-   return (
+   const decodedPhoneNumber = decodeURI(data.data.phones.nodes[0].phoneNumber.number);*/
+   return <div>error</div>; /*(
       <div className={styles.details}>
          <div className="container">
             <Breadcrumbs />
@@ -101,6 +101,6 @@ async function Details({ params }: { params: { Details: string } }) {
          </div>
          <ContactUs />
       </div>
-   );
+   );*/
 }
 export default Details;

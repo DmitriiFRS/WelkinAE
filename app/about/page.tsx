@@ -5,7 +5,7 @@ import Title from "./Title";
 import styles from "./about.module.scss";
 import { fetchGraphqlData } from "../Utilities/FetchData";
 
-export async function generateMetadata() {
+/*export async function generateMetadata() {
    const data = await fetchGraphqlData(
       `
       query {
@@ -24,10 +24,10 @@ export async function generateMetadata() {
       title: data.data.metadata.nodes[0].title.title,
       description: data.data.metadata.nodes[0].title.description,
    };
-}
+}*/
 
 function page() {
-   return (
+   return <div>error</div>; /*(
       <div className={styles.about}>
          <div className={`container ${styles.about__container}`}>
             <Breadcrumbs />
@@ -36,6 +36,6 @@ function page() {
          </div>
          <ContactUs />
       </div>
-   );
+   );*/
 }
 export default page;
