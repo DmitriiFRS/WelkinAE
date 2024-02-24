@@ -13,7 +13,7 @@ function CatalogContainer({ jwtToken }: { jwtToken: string | undefined }) {
          "Content-type": "application/json",
          Authorization: `Bearer ${jwtToken}`,
       };
-      fetch("https://welkingroup.ru/wpgraphql", {
+      fetch("https://welkin-team.ae/wpgraphql", {
          method: "POST",
          headers: headers,
          body: JSON.stringify({
@@ -41,7 +41,6 @@ function CatalogContainer({ jwtToken }: { jwtToken: string | undefined }) {
          .then((res) => res.json())
          .then((res) => setData(res));
    }, []);
-
    return <div className={styles.catalog__body}>{!data ? <Loader /> : <Cards items={data.data.products.nodes} />}</div>;
 }
 export default CatalogContainer;
