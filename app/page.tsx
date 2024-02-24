@@ -21,12 +21,12 @@ export async function generateMetadata() {
       }
     `
    );
+   console.log(data);
    return {
       title: data.data.metadata.nodes[4].title.title,
       description: data.data.metadata.nodes[4].title.description,
    };
 }
-
 export default async function Home() {
    /* const data = await fetchGraphqlData(`
    query {

@@ -1,6 +1,6 @@
 export async function fetchGraphqlData(queryParam: string) {
    try {
-      const url = "https://welkingroup.ru/wpgraphql";
+      const url = "https://welkin-team.ae/wpgraphql";
       const headers = { "Content-type": "application/json", Authorization: `Bearer ${process.env.WP_JWT_TOKEN}` };
       const req = await fetch(url, {
          next: { revalidate: 60 },
