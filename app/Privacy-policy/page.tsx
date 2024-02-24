@@ -4,7 +4,7 @@ import TextBlock from "./TextBlock";
 import styles from "./privacy.module.scss";
 import { fetchGraphqlData } from "../Utilities/FetchData";
 
-/*export async function generateMetadata() {
+export async function generateMetadata() {
    const data = await fetchGraphqlData(
       `
       query {
@@ -23,7 +23,7 @@ import { fetchGraphqlData } from "../Utilities/FetchData";
       title: data.data.metadata.nodes[1].title.title,
       description: data.data.metadata.nodes[1].title.description,
    };
-}*/
+}
 
 type TypeSubtitlesInner = {
    main: string;
@@ -204,7 +204,7 @@ const textBlock: TypeTextBlock = [
 ];
 
 function Privacy() {
-   return <div>error</div>; /*(
+   return (
       <section className={styles.privacy}>
          <div className="container">
             <Breadcrumbs />
@@ -214,6 +214,6 @@ function Privacy() {
             })}
          </div>
       </section>
-   );*/
+   );
 }
 export default Privacy;
