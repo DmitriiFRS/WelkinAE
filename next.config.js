@@ -4,8 +4,8 @@ module.exports = {
    images: {
       remotePatterns: [
          {
-            protocol: "http",
-            hostname: "5.35.93.126",
+            protocol: "https",
+            hostname: "welkingroup.ru",
          },
       ],
    },

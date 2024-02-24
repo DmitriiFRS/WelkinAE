@@ -5,33 +5,37 @@ import Cards from "./Cards";
 import styles from "./catalog.module.scss";
 import Loader from "./Loader";
 
-function CatalogContainer() {
+function CatalogContainer({ jwtToken }: { jwtToken: string | undefined }) {
    const [data, setData] = useState<any>(null);
 
    useEffect(() => {
+      const headers = {
+         "Content-type": "application/json",
+         Authorization: `Bearer ${jwtToken}`,
+      };
       fetch("https://welkingroup.ru/wpgraphql", {
          method: "POST",
-         headers: { "Content-type": "application/json" },
+         headers: headers,
          body: JSON.stringify({
             query: `
-            query {
-              products(first: 99) {
-                nodes {
-                  productCard {
-                    title
-                    type
-                    href
-                    subtype
-                    image {
-                      node {
-                        sourceUrl
-                      }
+          query {
+            products(first: 99) {
+              nodes {
+                productCard {
+                  title
+                  type
+                  href
+                  subtype
+                  image {
+                    node {
+                      sourceUrl
                     }
                   }
                 }
               }
             }
-            `,
+          }
+          `,
          }),
       })
          .then((res) => res.json())
