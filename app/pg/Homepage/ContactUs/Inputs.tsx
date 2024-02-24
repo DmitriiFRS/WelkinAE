@@ -5,7 +5,7 @@ import styles from "../homepage.module.scss";
 import { FormEvent, useEffect, useState } from "react";
 import Popup from "./Popup";
 
-function Inputs() {
+function Inputs({ jwtToken }: { jwtToken: string | undefined }) {
    let scrollWidth: null | number = null;
    if (typeof window !== "undefined") {
       scrollWidth = window.innerWidth - document.body.clientWidth;
@@ -57,20 +57,33 @@ function Inputs() {
    }
    async function handleSubmit(e: FormEvent) {
       e.preventDefault();
-      const response = await fetch("/pages/api", {
-         method: "POST",
-         headers: {
-            "content-type": "application/json",
-         },
-         body: JSON.stringify({
-            name,
-            tel,
-            question,
-         }),
-      });
+      if (!name || !tel || !question) return;
+      const url = "https://welkin-team.ae/wpgraphql";
+      const headers = { "Content-type": "application/json", Authorization: `Bearer ${jwtToken}` };
       setName("");
       setTel("");
       setQuestion("");
+      const res = await fetch(url, {
+         headers,
+         method: "POST",
+         body: JSON.stringify({
+            query: `
+            mutation {
+               createReq(input: {title: "Имя: ${name}, Телефон: ${tel}, Вопрос: ${question}"}) {
+                 req {
+                   request {
+                     name
+                     phone
+                     question
+                   }
+                 }
+               }
+             }
+            `,
+         }),
+      });
+      const data = await res.json();
+      return data;
    }
    return (
       <form onSubmit={handleSubmit} className={styles.contactUs__inputsBody}>
