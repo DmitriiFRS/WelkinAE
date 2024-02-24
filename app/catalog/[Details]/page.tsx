@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: { params: { Details: string }
       (el: MetadataType) => el.productCard.href.replace(/\s|\//g, "_") === params.Details
    );
    return {
-      title: searchItem.productCard.title,
+      title: `Welkin | ${searchItem.productCard.title}`,
       description: searchItem.productCard.metaDescription,
    };
 }
