@@ -21,14 +21,13 @@ export async function generateMetadata() {
       }
     `
    );
-   console.log(data);
    return {
       title: data.data.metadata.nodes[4].title.title,
       description: data.data.metadata.nodes[4].title.description,
    };
 }
 export default async function Home() {
-   /* const data = await fetchGraphqlData(`
+   const data = await fetchGraphqlData(`
    query {
     previews {
       nodes {
@@ -67,9 +66,8 @@ export default async function Home() {
       }
     }
   }
-   `);*/
-   return <div>error</div>; /*(
-    
+   `);
+   return (
       <div className={styles.main}>
          <Preview data={data.data.previews.nodes[0].homepagePreview} />
          <Equip />
@@ -77,5 +75,5 @@ export default async function Home() {
          <About data={data.data.aboutHomepage.nodes[0].aboutCompany} />
          <ContactUs />
       </div>
-   );*/
+   );
 }
