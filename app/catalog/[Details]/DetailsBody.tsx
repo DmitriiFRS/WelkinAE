@@ -1,6 +1,7 @@
 import styles from "../catalog.module.scss";
 import Image from "next/image";
 import Chars from "./Chars";
+import GetThePrice from "./GetThePrice";
 
 export type DataType = {
    productCard: {
@@ -44,9 +45,7 @@ async function DetailsBody({ el, decodedPhoneNumber }: Props) {
                         <span>{el.productCard.coolingOutput}</span>
                      </div>
                   </div>
-                  <a href={"tel://" + decodedPhoneNumber} className={`${styles.details__item__btn} btnYellow`}>
-                     <span>Get the price</span>
-                  </a>
+                  <GetThePrice decodedPhoneNumber={decodedPhoneNumber} />
                </div>
             </div>
             <div className={styles.details__titleBody}>
