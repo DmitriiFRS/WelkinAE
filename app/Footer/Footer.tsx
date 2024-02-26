@@ -48,6 +48,7 @@ async function Footer() {
        }
        }
    `);
+   const decodedPhoneNumber = decodeURI(data.data.phones.nodes[0].phoneNumber.number);
    return (
       <div className={`container ${styles.footer}`}>
          <div className={styles.footer__logoBody}>
@@ -55,9 +56,6 @@ async function Footer() {
                <div className={styles.footer__logoImgBody}>
                   <Image src={logo} alt="welkin" fill />
                </div>
-            </Link>
-            <Link href={"/Privacy-policy"}>
-               <div className={styles.footer__subtitle}>privacy policy</div>
             </Link>
          </div>
          <div className={styles.footer__cols}>
@@ -84,9 +82,11 @@ async function Footer() {
             <div className={styles.footer__cols__items}>
                <h3 className={styles.footer__cols__title}>Contacts</h3>
                <ul className={styles.footer__cols__list}>
-                  <li className={styles.footer__cols__item}>{data.data.phones.nodes[0].phoneNumber.number}</li>
+                  <li className={styles.footer__cols__item}>
+                     <a href={"tel://" + decodedPhoneNumber}>{data.data.phones.nodes[0].phoneNumber.number}</a>
+                  </li>
                   <li className={`${styles.footer__cols__item} ${styles.footer__cols__itemMail}`}>
-                     Sales@welkingulf.ae
+                     <a href="mailto:Sales@welkingulf.ae">Sales@welkingulf.ae</a>
                   </li>
                </ul>
             </div>
@@ -96,7 +96,7 @@ async function Footer() {
                   {data.data.footer.nodes.map((el) => {
                      return (
                         <li key={el.id} className={styles.footer__cols__item}>
-                           <Link className={styles.footer__cols__itemLink} href={el.footer.href}>
+                           <Link target="_blank" className={styles.footer__cols__itemLink} href={el.footer.href}>
                               {el.footer.footersocial}
                            </Link>
                         </li>
@@ -109,5 +109,7 @@ async function Footer() {
    );
 }
 export default Footer;
-
-// <li className={styles.footer__cols__item}>Telegram</li>
+/*
+<Link href={"/Privacy-policy"}>
+   <div className={styles.footer__subtitle}>privacy policy</div>
+</Link>*/

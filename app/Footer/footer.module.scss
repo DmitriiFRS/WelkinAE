@@ -9,6 +9,10 @@
       align-items: center;
       gap: 50px;
    }
+   &__logoBody {
+      display: flex;
+      align-items: center;
+   }
    &__logoImgBody {
       position: relative;
       width: 130px;
@@ -56,6 +60,9 @@
          margin: 0 0 15px 0;
          transition: 0.2s;
          cursor: pointer;
+         & a {
+            color: inherit;
+         }
          &:not(:last-child) {
             margin: 0 0 15px 0;
          }

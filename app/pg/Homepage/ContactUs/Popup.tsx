@@ -22,7 +22,7 @@ function Popup({ isPopupOpen, setPopupOpen }: { isPopupOpen: boolean; setPopupOp
                <div>Request sent</div>
             </div>
             <button onClick={closePopup} className={`${styles.popup__btn} btnYellow`}>
-               <span>back to the website</span>
+               <span>Back to the website</span>
             </button>
          </div>
       </div>

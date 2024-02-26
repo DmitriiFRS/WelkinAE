@@ -21,9 +21,11 @@ export async function POST(request: NextRequest) {
       const mailOption = {
          from: email,
          to: "dmitriifrs@gmail.com",
-         subject: "send email test",
+         subject: `Request from ${name} | welkin-team.ae`,
          html: `
-         <h3>Hello from ${name}</h3>
+         <h1>Name: ${name}</h1>
+         <h2>Phone number: ${tel}</h2>
+         <h3>Question: ${question}</h3>
       `,
       };
       await transporter.sendMail(mailOption);

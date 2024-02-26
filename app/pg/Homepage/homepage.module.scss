@@ -764,8 +764,8 @@
       background: inherit;
       padding: 20px 30px;
       font-weight: 350;
-      text-transform: uppercase;
       width: 100%;
+      font-size: 16px;
       &:not(:first-child) {
          margin: 20px 0 0 0;
       }
@@ -779,11 +779,11 @@
       background: inherit;
       padding: 20px 30px;
       font-weight: 350;
-      text-transform: uppercase;
       resize: none;
       height: 150px;
       margin: 20px 0 0 0;
       width: 100%;
+      font-size: 16px;
       &__dirty {
          border: 1px solid #ff0000;
       }
