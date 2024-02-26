@@ -48,7 +48,7 @@ function Equip() {
          <div className="container">
             <div className={styles.equip__titleBody}>
                <h2 className={styles.equip__title}>Our equipment</h2>
-               <Link href="/catalog">
+               <Link className={styles.equip__catalogLink} href="/catalog">
                   <button className={styles.equip__catalog}>Our catalog</button>
                </Link>
             </div>
