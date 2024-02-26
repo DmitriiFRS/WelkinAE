@@ -20,11 +20,11 @@ export async function POST(request: NextRequest) {
       });
       const mailOption = {
          from: email,
-         to: "dmitriifrs@gmail.com",
+         to: "sales@welkingulf.ae",
          subject: `Request from ${name} | welkin-team.ae`,
          html: `
-         <h1>Name: ${name}</h1>
-         <h2>Phone number: ${tel}</h2>
+         <h2>Name: ${name}</h2>
+         <h3>Phone number: ${tel}</h3>
          <h3>Question: ${question}</h3>
       `,
       };
