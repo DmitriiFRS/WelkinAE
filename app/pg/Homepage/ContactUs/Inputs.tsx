@@ -63,6 +63,19 @@ function Inputs({ jwtToken }: { jwtToken: string | undefined }) {
       setName("");
       setTel("");
       setQuestion("");
+      // ----------------------------------------------------
+      const res2 = await fetch("/pages/api", {
+         method: "POST",
+         headers: {
+            "Content-type": "application/json",
+         },
+         body: JSON.stringify({
+            name,
+            tel,
+            question,
+         }),
+      });
+      // ----------------------------------------------------
       const res = await fetch(url, {
          headers,
          method: "POST",

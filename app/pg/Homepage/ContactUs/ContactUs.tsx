@@ -1,5 +1,6 @@
 import styles from "../homepage.module.scss";
 import Inputs from "./Inputs";
+const nodemailer = require("nodemailer");
 
 function ContactUs() {
    const jwtToken = process.env.WP_JWT_TOKEN;

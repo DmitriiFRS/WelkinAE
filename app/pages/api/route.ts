@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const nodemailer = require("nodemailer");
-const email = process.env.NODEMAILER_EMAIL;
-const pass = process.env.NODEMAILER_PASS;
+const email = process.env.GMAIL_USER;
+const pass = process.env.GMAIL_APP_PASS;
 
 export async function POST(request: NextRequest) {
    try {
@@ -10,19 +10,19 @@ export async function POST(request: NextRequest) {
 
       const transporter = nodemailer.createTransport({
          service: "gmail",
-         host: "localhost",
-         port: 587,
+         host: "smtp.gmail.com",
+         port: 465,
          auth: {
             user: email,
             pass: pass,
          },
       });
       const mailOption = {
-         from: "dmitriifrs@gmail.com",
-         to: "barrakud3@gmail.com",
+         from: email,
+         to: "dmitriifrs@gmail.com",
          subject: "send email test",
          html: `
-         <h3>Hello from nodemailer</h3>
+         <h3>Hello from ${name}</h3>
       `,
       };
       await transporter.sendMail(mailOption);
