@@ -14,7 +14,7 @@ type MetadataType = {
    };
 };
 
-export async function generateMetadata({ params }: { params: { Details: string } }) {
+/*export async function generateMetadata({ params }: { params: { Details: string } }) {
    const item = await fetchGraphqlData(`
     query {
       products(first: 99) {
@@ -36,10 +36,10 @@ export async function generateMetadata({ params }: { params: { Details: string }
       title: `Welkin | ${searchItem.productCard.title}`,
       description: searchItem.productCard.metaDescription,
    };
-}
+}*/
 
 async function Details({ params }: { params: { Details: string } }) {
-   const data = await fetchGraphqlData(`
+   /* const data = await fetchGraphqlData(`
    query {
     products(first: 99) {
       nodes {
@@ -85,22 +85,22 @@ async function Details({ params }: { params: { Details: string } }) {
       }
     }
   }
-   `);
-   const decodedPhoneNumber = decodeURI(data.data.phones.nodes[0].phoneNumber.number);
+   `);*/
+   //const decodedPhoneNumber = decodeURI(data.data.phones.nodes[0].phoneNumber.number);
    return (
       <div className={styles.details}>
-         <div className="container">
-            <Breadcrumbs />
+         <div className="container"></div>
+         <ContactUs />
+      </div>
+   );
+}
+export default Details;
+
+/*<Breadcrumbs />
             {data.data.products.nodes.map((el: DataType, index: number) => {
                if (el.productCard.href.replace(/\s|\//g, "_") === params.Details) {
                   return <DetailsBody key={index} el={el} decodedPhoneNumber={decodedPhoneNumber} />;
                }
             })}
             <CatalogPDF />
-            <Recommended data={data.data.recommends.nodes} />
-         </div>
-         <ContactUs />
-      </div>
-   );
-}
-export default Details;
+            <Recommended data={data.data.recommends.nodes} />*/

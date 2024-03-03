@@ -23,7 +23,7 @@ export const list = [
    },
 ];
 async function Header() {
-   const data = await fetchGraphqlData(`
+   /*const data = await fetchGraphqlData(`
    query {
       phones {
          nodes {
@@ -33,9 +33,9 @@ async function Header() {
          }
        }
     }
-   `);
-   const decodedPhoneNumber = decodeURI(data.data.phones.nodes[0].phoneNumber.number);
-   return (
+   `);*/
+   //const decodedPhoneNumber = decodeURI(data.data.phones.nodes[0].phoneNumber.number);
+   return <div>header</div>; /* (
       <div className={`container ${styles.header}`}>
          <MobileBlock />
          <Link className={styles.header__logo} href={"/"}>
@@ -58,6 +58,6 @@ async function Header() {
             <span>{data.data.phones.nodes[0].phoneNumber.number}</span>
          </a>
       </div>
-   );
+   );*/
 }
 export default Header;

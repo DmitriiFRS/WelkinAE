@@ -4,7 +4,7 @@ import { fetchGraphqlData } from "../Utilities/FetchData";
 import CatalogContainer from "./CatalogContainer";
 import styles from "./catalog.module.scss";
 
-export async function generateMetadata() {
+/*export async function generateMetadata() {
    const data = await fetchGraphqlData(
       `
       query {
@@ -23,7 +23,7 @@ export async function generateMetadata() {
       title: data.data.metadata.nodes[3].title.title,
       description: data.data.metadata.nodes[3].title.description,
    };
-}
+}*/
 
 function Catalog() {
    const jwtToken = process.env.WP_JWT_TOKEN;
@@ -32,10 +32,10 @@ function Catalog() {
          <div className="container">
             <Breadcrumbs />
             <h2 className={styles.catalog__title}>Catalog</h2>
-            <CatalogContainer jwtToken={jwtToken} />
          </div>
          <ContactUs />
       </div>
    );
 }
 export default Catalog;
+//<CatalogContainer jwtToken={jwtToken} />

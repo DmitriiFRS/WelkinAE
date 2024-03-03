@@ -28,7 +28,7 @@ type FooterData = {
 };
 
 async function Footer() {
-   const data: FooterData = await fetchGraphqlData(`
+   /*const data: FooterData = await fetchGraphqlData(`
    query {
       phones {
          nodes {
@@ -47,9 +47,9 @@ async function Footer() {
          }
        }
        }
-   `);
-   const decodedPhoneNumber = decodeURI(data.data.phones.nodes[0].phoneNumber.number);
-   return (
+   `);*/
+   //const decodedPhoneNumber = decodeURI(data.data.phones.nodes[0].phoneNumber.number);
+   return <div>footer</div>; /*(
       <div className={`container ${styles.footer}`}>
          <div className={styles.footer__logoBody}>
             <Link href={"/"}>
@@ -106,7 +106,7 @@ async function Footer() {
             </div>
          </div>
       </div>
-   );
+   );*/
 }
 export default Footer;
 /*

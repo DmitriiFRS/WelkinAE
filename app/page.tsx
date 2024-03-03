@@ -6,7 +6,7 @@ import Recommended from "./pg/Homepage/Recommended";
 import { fetchGraphqlData } from "./Utilities/FetchData";
 import styles from "./page.module.scss";
 
-export async function generateMetadata() {
+/*export async function generateMetadata() {
    const data = await fetchGraphqlData(
       `
       query {
@@ -25,9 +25,9 @@ export async function generateMetadata() {
       title: data.data.metadata.nodes[4].title.title,
       description: data.data.metadata.nodes[4].title.description,
    };
-}
+}*/
 export default async function Home() {
-   const data = await fetchGraphqlData(`
+   /*const data = await fetchGraphqlData(`
    query {
     previews {
       nodes {
@@ -66,14 +66,11 @@ export default async function Home() {
       }
     }
   }
-   `);
-   return (
-      <div className={styles.main}>
-         <Preview data={data.data.previews.nodes[0].homepagePreview} />
+   `);*/
+   return <div className={styles.main}></div>;
+}
+/*<Preview data={data.data.previews.nodes[0].homepagePreview} />
          <Equip />
          <Recommended data={data.data.recommends.nodes} />
          <About data={data.data.aboutHomepage.nodes[0].aboutCompany} />
-         <ContactUs />
-      </div>
-   );
-}
+         <ContactUs />*/

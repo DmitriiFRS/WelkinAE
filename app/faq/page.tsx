@@ -4,7 +4,7 @@ import { fetchGraphqlData } from "../Utilities/FetchData";
 import Questions from "./Questions";
 import styles from "./faq.module.scss";
 
-export async function generateMetadata() {
+/*export async function generateMetadata() {
    const data = await fetchGraphqlData(
       `
       query {
@@ -23,10 +23,10 @@ export async function generateMetadata() {
       title: data.data.metadata.nodes[2].title.title,
       description: data.data.metadata.nodes[2].title.description,
    };
-}
+}*/
 
 async function Faq() {
-   const data = await fetchGraphqlData(`
+   /*const data = await fetchGraphqlData(`
    query {
       faqs {
          nodes {
@@ -37,15 +37,16 @@ async function Faq() {
          }
        }
     }
-   `);
+   `);*/
    return (
       <div className={styles.faq}>
          <div className="container">
             <Breadcrumbs />
-            <Questions data={data.data.faqs.nodes} />
          </div>
          <ContactUs />
       </div>
    );
 }
 export default Faq;
+
+//<Questions data={data.data.faqs.nodes} />
